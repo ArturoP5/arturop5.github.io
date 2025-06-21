@@ -1,76 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Tarjeta Digital Arturo Piñeiro</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Playfair Display', serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f8f9fa;
-        }
-        .tarjeta {
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-            text-align: center;
-            max-width: 320px;
-            width: 90%;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-        .info {
-            font-size: 16px;
-            margin: 5px 0;
-        }
-        svg {
-            margin-top: 20px;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 14px;
-            border: none;
-            border-radius: 5px;
-            background-color: #495057;
-            color: white;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arturo Piñeiro Abgariani</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #c0c0c0;
+      font-family: Georgia, serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2em;
+      font-style: italic;
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
-    <div class="tarjeta">
-        <h1>Arturo Piñeiro Abgariani</h1>
-        <div class="info">📞 +34 667 572 503</div>
-        <div class="info">✉️ Arturo.Pineiro@mac.com</div>
-        <svg id="barcode"></svg>
-        <button onclick="window.print()">Imprimir / Guardar</button>
-    </div>
-
-    <script>
-        JsBarcode("#barcode", "+34667572503", {
-            format: "CODE128",
-            lineColor: "#000",
-            width: 2,
-            height: 50,
-            displayValue: false
-        });
-    </script>
-    <div style="text-align: center; margin-top: 30px;">
-  <p>Escanea este código QR para guardar el contacto:</p>
-  <img src="qr_contacto.png" alt="Código QR contacto" width="200">
-</div>
+  <h1>Arturo Piñeiro Abgariani</h1>
+  <img src="qr_contacto.png" alt="Código QR para añadir contacto">
 </body>
 </html>
